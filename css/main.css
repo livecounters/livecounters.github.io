@@ -35,6 +35,20 @@ body, html {
     text-align: center;
     position: inherit;
 }
+#likecount {
+    font-size: 4.5vw;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+    position: inherit;
+}
+#commentcount {
+    font-size: 4.5vw;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+    position: inherit;
+}
 .footer {
   position: fixed;
   left: 0;
