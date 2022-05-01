@@ -20,6 +20,9 @@ body, html {
 #title {
     font-size: 4vw;
 }
+#title2 {
+    font-size: 3.5vw;
+}
 #count {
     font-size: 15.5vw;
     color: #000;
