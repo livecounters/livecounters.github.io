@@ -13,7 +13,7 @@
    <span id="title"></span>
    <div class="odometer odometer-auto-theme" id="count"></div>
 <br>
-   <div class="odometer odometer-auto-theme" id="viewcount"></div>
+   <div class="odometer odometer-auto-theme" id="likecount"></div>
 <h style="font-size: 2vw;">count displayed on YouTube</p>
 
 <div class="footer">
@@ -28,7 +28,8 @@ function update(chanid) {
     .then(res => res.json()).then(data => {
         count.innerHTML = data.counts[0].count
         title.innerHTML = data.user[0].count
-        viewcount.innerHTML = data.counts[2].count
+        likecount.innerHTML = data.counts[3].count
+        commentcount.innerHTML = data.counts[5].count
         logo.src = data.user[1].count
     });
 }
