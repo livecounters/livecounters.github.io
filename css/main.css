@@ -30,12 +30,12 @@ body, html {
 #subcount {
     color: #fff;
     font-size: 14vw;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
     margin: 0;
     font-weight: 600;
     display: block;
     padding-top: 5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 #apicount {
     font-size: 4.5vw;
@@ -50,12 +50,12 @@ body, html {
 #viewcount {
     color: #fff;
     font-size: 14vw;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
     margin: 0;
     font-weight: 600;
     display: block;
     padding-top: 5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 #likecount {
     font-size: 4.5vw;
@@ -63,7 +63,8 @@ body, html {
     font-weight: 400;
     text-align: center;
     position: inherit;
-    color: #232323;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 #commentcount {
     font-size: 4.5vw;
@@ -71,7 +72,8 @@ body, html {
     font-weight: 400;
     text-align: center;
     position: inherit;
-    color: #232323;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 .footer {
   position: fixed;
