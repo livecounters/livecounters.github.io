@@ -1,7 +1,7 @@
 body, html {
     margin: 0px;
     padding: 0px;
-    background: #fff;
+    background: #000;
     font-size: 11pt;
     font-family: 'Roboto', sans-serif;
     display: inline;
@@ -18,9 +18,9 @@ body, html {
     position: relative;
 }
 #title {
-    font-size: 4vw;
-    color: #b3382c !important;
-    font-weight: bold;
+    font-size: 5vw;
+    color: #fff !important;
+    font-weight: 400;
 }
 #title2 {
     font-size: 3.5vw;
@@ -28,12 +28,13 @@ body, html {
     font-weight: bold;
 }
 #count {
-    font-size: 15.5vw;
-    color: #232323;
-    font-weight: bold;
-    text-align: center;
-    position: inherit;
-    margin-top: 10px;
+    color: #fff;
+    font-size: 14vw;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    margin: 0;
+    font-weight: 600;
+    display: block;
 }
 #viewcount {
     font-size: 4.5vw;
