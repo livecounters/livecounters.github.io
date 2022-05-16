@@ -48,12 +48,14 @@ body, html {
     transition: all 1s ease;
 }
 #viewcount {
-    font-size: 4.5vw;
     color: #fff;
-    font-weight: 400;
-    text-align: center;
-    position: inherit;
-    color: #232323;
+    font-size: 14vw;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    margin: 0;
+    font-weight: 600;
+    display: block;
+    padding-top: 5px;
 }
 #likecount {
     font-size: 4.5vw;
