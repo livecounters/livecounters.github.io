@@ -58,7 +58,7 @@ body, html {
     transition: all 1s ease;
 }
 #likecount {
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: #fff;
     font-weight: 400;
     text-align: center;
@@ -67,7 +67,7 @@ body, html {
     transition: all 1s ease;
 }
 #commentcount {
-    font-size: 4.5vw;
+    font-size: 4vw;
     color: #fff;
     font-weight: 400;
     text-align: center;
