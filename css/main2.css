@@ -1,0 +1,88 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 11pt;
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    text-align: center;
+}
+#llogo {
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    margin-top: 0;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+#channelname {
+    font-size: 5vw;
+    color: #fff !important;
+    font-weight: 400;
+}
+#videotitle {
+    font-size: 2.5vw;
+    color: #fff !important;
+    font-weight: 400;
+}
+#subcount {
+    color: #fff;
+    font-size: 7em;
+    margin: 0;
+    margin-top: 20px;
+    font-weight: bold;
+    display: block;
+    padding-top: 5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+#apicount {
+    font-size: 4.5vw;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    position: inherit;
+    padding-top: 10px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+#viewcount {
+    color: #fff;
+    font-size: 14vw;
+    margin: 0;
+    font-weight: 600;
+    display: block;
+    padding-top: 5px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+#likecount {
+    font-size: 4vw;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    position: inherit;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+#commentcount {
+    font-size: 4vw;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    position: inherit;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #b3382c;
+  color: white;
+  text-align: center;
+}
