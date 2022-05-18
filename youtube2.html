@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Live Counters - YouTube Estimate</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/odometer2.css">
+    <link rel="stylesheet" href="/css/main2.css">
+    <link rel="stylesheet" href="/css/realtime2.css">
+    <script src="/js/odometer.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Robot" rel="stylesheet">
+</head>
+<body>
+<br>
+<br>
+<br>
+<div class="page-realtime-body-containment containment-image2">
+    <div class="meta meta-youtube">
+        <img id="logo" alt="Avatar">
+        <a href="" target="_blank"><span>+</span><span>+</span></a>
+    </div>
+    <h3 id="userName" class="realtime-username-youtube"><sup></sup></h3>
+
+    <div class="odometer odometer-auto-theme" id="subcount"></div>
+
+
+</body>
+
+<script>
+var channel = window.location.href.split('?u=')[1] || '';
+
+function update(chanid) {
+    fetch('https://mixerno.space/api/youtube-channel-counter/user/'+chanid+'')
+    .then(res => res.json()).then(data => {
+        subcount.innerHTML = data.counts[0].count
+        userName.innerHTML = data.user[0].count
+        logo.src = data.user[1].count
+    });
+}
+
+// Intervals
+setInterval(() => {
+    update(channel);
+}, 2000);
+
+update(channel)
+
+</script>
