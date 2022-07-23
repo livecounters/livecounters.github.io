@@ -24,10 +24,11 @@ var channel = window.location.href.split('?u=')[1] || '';
 
 function update(chanid) {
     fetch('https://api.subscriberwars.space/next/yt/'+chanid+'').then(res => res.json()).then(data => {
-        title.innerHTML = data.info.name
+        channelname.innerHTML = data.info.name
         logo.src = data.info.pfp
         subcount.innerHTML = data.estCounts.subCount
         viewcount.innerHTML = data.estCounts.viewCount
+        apicount.innerHTML = data.apiCounts.subCount
     });
 }
 
