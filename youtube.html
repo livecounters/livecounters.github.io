@@ -26,7 +26,6 @@ function update(chanid) {
     fetch('https://api.subscriberwars.space/next/yt/'+chanid+'').then(res => res.json()).then(data => {
         channelname.innerHTML = data.info.name
         subcount.innerHTML = data.estCounts.subCount
-        viewcount.innerHTML = data.estCounts.viewCount
         apicount.innerHTML = data.apiCounts.subCount
     });
 }
