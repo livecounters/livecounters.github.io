@@ -23,12 +23,11 @@
 var channel = window.location.href.split('?u=')[1] || '';
 
 function update(chanid) {
-    fetch('https://mixerno.space/api/youtube-channel-counter/user/'+chanid+'')
-    .then(res => res.json()).then(data => {
-        subcount.innerHTML = data.counts[0].count
-        channelname.innerHTML = data.user[0].count
-        apicount.innerHTML = data.counts[2].count
-        logo.src = data.user[1].count
+    fetch('https://api.subscriberwars.space/next/yt/'+chanid+'').then(res => res.json()).then(data => {
+        title.innerHTML = data.info.name
+        logo.src = data.info.pfp
+        subcount.innerHTML = data.estCounts.subCount
+        viewcount.innerHTML = data.estCounts.viewCount
     });
 }
 
